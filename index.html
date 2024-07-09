@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Logo">
+    </header>
+    <main>
+        <section class="content">
+            <div class="input-section">
+                <textarea name="campo" id="area_texto" rows="15" cols="62" placeholder="Digite seu texto" oninput="validarCorrecao()"></textarea>
+                <img class="img_icone" src="assets/exc.png" alt="Ícone de exclamação">
+                <p class="icone-correcao">Apenas letras minúsculas e sem acentos</p>
+                <br>
+                <div class="buttons">
+                    <button onclick="exibirCriptografia()" id="button_criptografar">Criptografar</button>
+                    <button onclick="exibirDescriptografia()" id="button_descriptografar">Descriptografar</button>
+                </div>
+                </div>
+                <div class="secao__resultado">
+                    <div class="conteudo-centralizado">
+                        <img src="assets/person.png" alt="Descrição da imagem" style="width: 85%; height: auto; margin: auto; display: block;">
+                        <h2>Nenhuma mensagem encontrada</h2>
+                        <p class="text_div">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    </div>
+                    <div class="resultado-criptografado">
+                        <p id="resultado-texto"></p>
+                        <button onclick="copiarTexto()" id="button_copiar">Copiar</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    <script src="script.js"></script>
+</body>
+</html>

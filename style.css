@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primaria: white;
+    --cor-secundaria: #0FC2C0;
+    --cor-terciaria: #023535;
+
+    --fonte-primaria:  "Krona One", sans-serif;
+    --fonte-secundária: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-terciaria);
+   
+}
+
+
+main {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 6rem;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header {
+    padding: 2% 0% 0% 3%;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+}
+
+#area_texto {
+    background-color: var(--cor-terciaria);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem;
+    margin-left: 15rem;
+    font-family: var(--fonte-secundária);
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    resize: none;
+    font-weight: 500;
+    color: white;
+}
+
+#area_texto::placeholder {
+    cursor: pointer;
+    color: var(--cor-secundaria);
+}
+
+.img_icone {
+    margin-left: 15.7rem;
+}
+.icone-correcao {
+    font-family: var(--fonte-secundária);
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #495057;
+    margin-top: -0.9rem;
+    margin-left: 17rem;
+}
+
+.img_icone {
+    transition: filter 0.1s ease;
+}
+
+.img_icone.erro {
+    filter: invert(25%) sepia(82%) saturate(6840%) hue-rotate(355deg) brightness(95%) contrast(122%);
+
+}
+
+.icone-correcao.erro {
+    color: red;
+}
+
+#button_criptografar {
+    border-radius: 24px;
+    margin-left: 15rem;
+    margin-bottom: 4.5rem;
+    height: 67px;
+    width: 328px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-secundária);
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+   
+}
+
+#button_descriptografar {
+    border-radius: 24px;
+    height: 67px;
+    width: 328px;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    border-color: var(--cor-secundaria);
+    font-family: var(--fonte-secundária);
+    font-size: 1rem;
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+.secao__resultado {
+    background-color: white;
+    width: 400px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -3.5rem;
+    border-radius: 32px;
+    margin-right: 5rem;
+    box-shadow:
+        0 4px 8px rgba(0, 0, 0, 0.1),
+        0 8px 16px rgba(0, 0, 0, 0.05),
+        0 12px 24px rgba(0, 0, 0, 0.03),
+        0 16px 32px rgba(0, 0, 0, 0.02);
+    font-family: var(--fonte-secundária);
+}
+
+.conteudo-centralizado {
+    text-align: center;
+    margin-top: 7rem;
+    font-size: 0.8rem;
+    display: grid;
+    gap: 0.7rem;
+}
+
+
+.resultado-criptografado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    display: none;
+    min-height: 100%;
+    margin: 2rem;
+   
+}
+
+#resultado-texto {
+    flex-grow: 1;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+#button_copiar {
+    border-radius: 24px;
+    height: 67px;
+    width: 328px;
+    background-color: #FFFFFF;
+    color: var(--cor-secundaria);
+    border-color: var(--cor-secundaria);
+    font-family: var(--fonte-secundária);
+    font-size: 1rem;
+    margin: 24px auto 0 auto;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 4.5rem;
+   
+}
+
+.text-div{
+    font-size: 0.8rem;
+}
